@@ -1,0 +1,27 @@
+body{
+  background-color: #ccc;
+}
+
+.Japanflag{
+padding:10%;
+background-color: white;
+position: relative;
+border-style: solid;
+border-width: 5px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 600px;
+  margin-left:  600px;
+
+}
+
+.Japanflag:before{
+content: "";
+width: 40%;
+height: 60%;
+position: absolute;
+background-color: #c70025;
+top: 20%;
+left: 30%;
+border-radius: 50%;
+}

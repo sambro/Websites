@@ -1,0 +1,19 @@
+body{
+  background-color: #ccc;
+}
+
+.Netherlands-flag{
+padding: 33.33%;
+background-color: white;
+position: relative;
+}
+
+.Netherlands-flag:before{
+  content: "";
+  width: 100%;
+  height: 33.33%;
+  background-color: #AE1C28;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
