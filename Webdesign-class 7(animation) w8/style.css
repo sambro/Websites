@@ -1,0 +1,242 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	width: 100%;
+	height: 100vh;
+}
+
+/* .my-grad{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(to top right, #ff0000, #ffffff, #eeeeee, #dddddd, #ff0000);
+} */
+
+/* .my-grad{
+	width: 100%;
+	height: 100vh;
+	background: radial-gradient(black 30%, darkred 30%, white 40%);
+} */
+
+.my-grad{
+		width: 100%;
+	height: 100vh;
+	background-color: #fd21dc;
+background-image: linear-gradient(285deg, #fd21dc 0%, #ff212b 100%);
+
+
+}
+
+
+.rectangle{
+	width: 200px;
+	height: 200px;
+	background-color: hotpink;
+	margin: auto;
+	margin-top: 200px;
+	position: relative;
+}
+.rectangle:hover{
+	animation: kawsar 4s infinite;
+}
+.rectangle:hover .semi-rec1{
+	animation: shora 4s infinite;
+}
+.rectangle:hover .semi-rec2{
+	animation: shora2 4s infinite;
+}
+.rectangle:hover::before{
+	animation: shora3 4s infinite;
+}
+.rectangle:hover::after{
+	animation: shora4 4s infinite;
+}
+
+
+
+@keyframes kawsar{
+	0% {
+		border-radius: 0;
+
+	}
+	5%{
+		background-color: maroon;
+	}
+	10%{
+		background-color: red;
+	}
+	15%{
+		background: green;
+	}
+	20%{
+		background: black;
+	}
+	25%{
+		background: blue;
+	}
+	30%{
+		background: yellow;
+	}
+	35%{
+		background: purple;
+	}
+	100%{
+		border-radius: 50%;
+	}
+}
+.semi-rec1{
+	width: 100px;
+	height: 100px;
+	background-color: brown;
+	position: absolute;
+	top: -50px;
+	left: -50px;
+}
+@keyframes shora{
+	0% {
+		left: -50px;
+	}
+	5%{
+		background-color: maroon;
+	}
+	10%{
+		background-color: red;
+	}
+	15%{
+		background: green;
+	}
+	20%{
+		background: black;
+	}
+	25%{
+		background: blue;
+	}
+	30%{
+		background: yellow;
+	}
+	35%{
+		background: purple;
+	}
+	100%{
+		left: 250px;
+		border-radius: 50%;
+	}
+}
+.semi-rec2{
+	width: 100px;
+	height: 100px;
+	background-color: brown;
+	position: absolute;
+	top: -50px;
+	right: -50px;
+}
+@keyframes shora2{
+	0%{
+		top: -50px;
+	}
+	5%{
+		background-color: maroon;
+	}
+	10%{
+		background-color: red;
+	}
+	15%{
+		background: green;
+	}
+	20%{
+		background: black;
+	}
+	25%{
+		background: blue;
+	}
+	30%{
+		background: yellow;
+	}
+	35%{
+		background: purple;
+	}
+	100%{
+		top: 250px;
+		border-radius: 50%;
+	}
+}
+.rectangle::before{
+	content: "";
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: brown;
+	bottom: -50px;
+	left: -50px;
+}
+@keyframes shora3{
+	0%{
+		bottom: -50px;
+	}
+	5%{
+		background-color: maroon;
+	}
+	10%{
+		background-color: red;
+	}
+	15%{
+		background: green;
+	}
+	20%{
+		background: black;
+	}
+	25%{
+		background: blue;
+	}
+	30%{
+		background: yellow;
+	}
+	35%{
+		background: purple;
+	}
+	100%{
+		bottom: 250px;
+		border-radius: 50%;
+	}
+}
+.rectangle::after{
+	content: "";
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: brown;
+	bottom: -50px;
+	right: -50px;
+}
+@keyframes shora4{
+	0%{
+		right: -50px;
+	}
+	5%{
+		background-color: maroon;
+	}
+	10%{
+		background-color: red;
+	}
+	15%{
+		background: green;
+	}
+	20%{
+		background: black;
+	}
+	25%{
+		background: blue;
+	}
+	30%{
+		background: yellow;
+	}
+	35%{
+		background: purple;
+	}
+	100%{
+		right: 250px;
+		border-radius: 50%;
+	}
+}

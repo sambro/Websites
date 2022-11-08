@@ -1,0 +1,21 @@
+		
+		.h{
+			height:80px;
+			width:auto;
+			background-color:#f45d5d;
+		}
+		.section
+		{
+			margin:0 50px auto;
+		}
+		.dv{
+			padding-top:25px;
+			padding-left:50%;
+		}
+		.dvi{
+			background-color:#f45d5d;
+			color:white;
+		}
+		.logo{
+			height:80px;
+			width:80px;
